@@ -8,6 +8,8 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{ {./assets/} }
 
 \newcommand{\tomegg}{
   \href{http://tome.gg}{Tome.gg}
@@ -64,21 +66,24 @@ darren.sapalo@gmail.com}
 \maketitle
 
 \begin{abstract}
-The \tomegg community carves out and illustrates its contribution to the great 
-adventure of inclusive and equitable quality education and lifelong learning 
-for all\footnote[1]{Feel free to skip, ignore, skim sections. We recommend you read only 
+This whitepaper carves out the \tomegg's contribution to inclusive and equitable
+quality education and lifelong learning for all\footnote[1]{Feel free to skip, ignore, skim sections. We recommend you read only 
 the sections that is relevant to you.}. 
 
-In section \ref{sec:community_individuals_stakeholders}, we describe the archetypes of our individual stakeholders and define
-the community.
-In section \ref{sec:problems_challenges}, we articulate the problems and challenges facing the community.
-In section \ref{sec:principles_mindsets}, we define our community principles and provide mindsets with which
-to engage the community, whether in problem solving or community engagement. 
-In section \ref{sec:community_directions}, we define the general directions of the \tomegg leadership that 
-lays the groundwork for the active projects within the community. 
+In section \ref{sec:global_scene}, we quantify the gravity of the challenge that
+the community faces at a global scale.
+In section \ref{sec:introduction}, we introduce Tome.gg and its general concept.
+In section \ref{sec:community_individuals_stakeholders}, we describe the different 
+stakeholders within and adjacent to the community.
+In section \ref{sec:problems_challenges}, we define the problems and challenges 
+we are aiming to address.
+In section \ref{sec:contribution}, we propose theories and recommendations
+to address said problems to guide the community's effort in contribution.
 
-After reading this whitepaper, you will have a clear idea of who we are, what we
-are trying to solve, and spaces in our community that you can go: to lurk, 
+The remaining sections \ref{sec:principles_mindsets} and \ref{sec:community_directions}
+define our community principles and directions that lay the groundwork
+for the active projects within the community. After reading this whitepaper, you will have a clear idea of who we are, what we
+are trying to solve, and the spaces in our community that you can go: to lurk, 
 participate, play, learn, teach, or create.
 \end{abstract}
 
@@ -86,57 +91,149 @@ participate, play, learn, teach, or create.
 education, technology, gaming, learning, growth
 \end{IEEEkeywords}
 
-\section{Introduction}
+\section{The global scene}
+\label{sec:global_scene}
 With the COVID19 pandemic, rising inflation rates, and resource shortages due to 
 threats of war, poverty and education are gravely affected.
-The UN highlights that the progress on global poverty rate has been reversed by
+The UN highlighted in their 2022 SDG Report \cite{b1} that the progress on global poverty rate has been reversed by
 3 years, but could be as worse as poverty reduction efforts being reversed to 
-as much as 9 years for low-income countries\cite{b1}. It is estimated that 
+as much as 9 years for low-income countries\cite{b2}. It is estimated that 
 ``147 million children missed more than half of their in-class instruction over 
-the past two years. This generation of children could lose a combined total of 
-\$17 trillion in lifetime earnings in present value'' \cite{b2}.
+the past two years [and this] generation of children could lose a combined total of 
+\$17 trillion in lifetime earnings in present value'' \cite{b3}.
 
-As a collective human society, we face great challenges. This is sets the stage 
-for innovators, inventors, educators, and entrepreneurs to collaborate on this 
-global problem. Who are affected? Who can contribute? What part should I play?
+As a collective society, the human race faces the great challenges of poverty, 
+inequality, and inaccessible resources. \tomegg believes that education is the
+critical component towards empowerment, upliftment of life quality, and 
+equitable opportunities in a global scene. This sets the stage that necessitates
+global collaboration on this global crisis. 
+
+Who are affected? Who can contribute? What part should I play? How might we
+engage various stakeholders and contributors like inventors, educators, and 
+entrepreneurs? 
 The key to enabling this global collaboration would be effective communications
-and a reliable protocol to ensure clarity and understanding. We begin with an 
-introduction to the community, its stakeholders, and the challenges and problems
-encountered in the following sections. 
+and a reliable protocol to ensure clarity and understanding. 
+The research and design of this protocol is led by \tomegg. We introduce Tome.gg
+in the following section.
 
+\section{Introduction}
+\label{sec:introduction}
+Every single person in the world is playing a game. Some play their game casually,
+while some play their game competitively. A person's game might be physical sports
+where the objective is to win based on the rules of the game. A person's game
+might be social interactions and their objective is to become popular with a huge 
+following. A person's game might be business, and their objective is to make their 
+numbers grow big. Everyone is playing a game.
+
+  \textbf{Tome.gg is an educational and growth-oriented community that leverages
+  lessons learned in games and applying them in one's personal and professional life.} 
+  In machine learning under computer science, the concept of applying what was 
+  learned from one domain or problem to another is called transfer learning\cite{b5}.
+  At \tomegg, we use examples, theories, and concepts learned from games to explain
+  and educate using analogies and comparisons. 
+  For example, we can see a model of apprenticeship\cite{b4} applied in the gaming domain
+  that represents the various stages of learning: people become apprentices, 
+  journeymen, and masters.
+
+\begin{figure}[t]
+  \includegraphics[scale=0.7]{stakeholders-gaming}
+  \centering
+  \caption{In the gaming domain, the following terms are commonly used to refer 
+  to people in relation to their skill level.}
+  \label{fig:stakeholders-gaming} 
+\end{figure}
+
+\tomegg primarily focuses on mid- to senior-level software engineers. However, 
+this focus on the software engineering domain and the focus on engineers at a
+journeyman stage does not limit the opportunities offered to apprentices and 
+masters. This focus does not restrict them from participating or contributing 
+to this community. Everyone has a unique role to play in how to efficiently 
+contribute in the global challenges in education, which we will discuss in 
+section \ref{sec:contribution}.
+
+The following section describes the stakeholders within and outside of the
+\tomegg community.
 
 \section{Community and Individuals}
 \label{sec:community_individuals_stakeholders}
 
-The following section describes the stakeholders within and outside of the \tomegg
-community.
+The previous section described the apprenticeship model which uses the 
+skill proficiency dimension to classify individuals.
+The following section uses the behavior dimension to classify stakeholders
+that we engage with in \tomegg whether individuals or organizations.
 
 \subsection{Students, Learners, Apprentices}
 
-These are people who want to learn.
+These are people who have an area of interest that they wish to learn
+about. This could be games, software engineering, medicine, law, or the like.
+Often times these are younger people, or fresh graduates, or people who are
+new to the workforce. In these cases, a young student would have the abundance of 
+time, energy, interest, and curiosity.
 
 \subsection{Teachers, Educators, Mentors}
 
-These are people 
+These are people who have accumulated an abundance of knowledge in their field.
+This could be people who have spent roughly 5-10 years in their domain or industry.
+In these cases, they have an abundance of experience and context about their
+field.
 
-\subsection{Masters, Experts, Inventors}
+\subsection{Masters, Experts, PhDs}
+
+These are people who have not only acquired knowledge in their field for decades,
+but are actively involved in advancing the production and creation of new 
+knowledge through research. This could be academic researchers, research scientists,
+or even e-sports gaming professionals that are crafting or innovating the next meta of 
+some video game. In these cases, they have an abundance of experience, context, and
+data about their field that enables them to theory craft, to perform pattern analysis,
+and to research new knowledge.
 
 \subsection{Consumers, Afficionados, Connoisseurs, Savants}
 
+These are people who may not be performers or creators in their field (e.g. cooking,
+creating YouTube videos, or creating art) but are well-versed in the taste and 
+quality of creations. They spend a lot of their time consuming different kinds of
+things to ensure their evaluations and analysis remains sharp. In these cases, 
+they have an abundance of observational or secondary experience in their field,
+and focus on enabling the accessibility of learning about theories and patterns 
+that either they or masters have developed.
+
 \subsection{Creators, Curators, Performers}
+
+These are individuals who are at the center of their field, actively participating,
+and are directly involved in creating a new performance, developing a new creation, 
+or remixing past things into something new. Some masters are also creators and 
+performers, but not all creators are masters. In a similar regard, these people can
+be considered as major manufacturers or creators, whether in the digital or physical 
+sense. In these cases, these individuals have an abundance of primary experience in
+their field and an immense abundance in their network, by having an incredible
+connection with their audiences or markets, or the partnerships they make.
 
 \subsection{Corporations, Organizations, Governments}
 
+These are organizations which operate at greater velocity as compared to individuals.
+Each organization has their own directions depending on what their objectives are.
+They have the great opportunity of funneling their resources into the causes that
+are important to them (e.g. profit, social impact, advocacies, inclusion) but with
+this immense power and influence comes also greater opportunity cost and risk. As
+such, they unfortunately cannot make as fast decisions as an individual might be 
+able to, as they have people and systems that depend on them already that they risk
+endangering or losing. In these cases, organizations are abundant in their resources,
+financial credibility, brand identity (if any), networks, and assets.
+
 \section{Problems and Challenges} 
 \label{sec:problems_challenges}
-Before you begin to format your paper, first write and save the content as a 
-separate text file. Complete all content and organizational editing before 
-formatting. Please note sections \ref{AA}--\ref{SCM} below for more information on 
-proofreading, spelling and grammar.
 
-Keep your text and graphic files separate until after the text has been 
-formatted and styled. Do not number text heads---{\LaTeX} will do that 
-for you.
+\subsection{The rising cost of education}
+
+\subsection{Moving fast but getting lost}
+
+\subsection{Increased costs due to context switching}
+
+\subsection{Inefficiencies, theft, and attribution}
+
+
+\section{Contribution}
+\label{sec:contribution}
 
 \subsection{Abbreviations and Acronyms}\label{AA}
 Define abbreviations and acronyms the first time they are used in the text, 
@@ -325,11 +422,12 @@ For papers published in translation journals, please give the English
 citation first, followed by the original foreign-language citation \cite{b6}.
 
 \begin{thebibliography}{00}
-  \bibitem{b1} United Nations, ``Poverty - United Nations Sustainable Development''. Accessed February 5, 2023 from \url{https://www.un.org/sustainabledevelopment/poverty/}.
-  \bibitem{b2} United Nations, ``Education - United Nations Sustainable Development''. Accessed February 5, 2023 from \url{https://www.un.org/sustainabledevelopment/education/}.
+  \bibitem{b1} United Nations, ``The Sustainable Development Goals Report 2022'' from \url{https://www.un.org/sustainabledevelopment/progress-report/}.
+  \bibitem{b2} United Nations, ``Poverty - United Nations Sustainable Development''. Accessed February 5, 2023 from \url{https://www.un.org/sustainabledevelopment/poverty/}.
+  \bibitem{b3} United Nations, ``Education - United Nations Sustainable Development''. Accessed February 5, 2023 from \url{https://www.un.org/sustainabledevelopment/education/}.
 
-\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+  
+\bibitem{b4} I need a reference for the apprenticeship model.
 \bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
 \bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
 \bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
