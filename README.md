@@ -2,7 +2,7 @@
 
 We're writing out what Tome.gg is all about.
 
-You might have encountered Tome.gg, TheGamingClassroom, and my other efforts that are in the realm of tech, education, and gaming.
+You might have encountered [Tome.gg](https://tome.gg), TheGamingClassroom, and my other efforts that are in the realm of tech, education, and gaming.
 
 ### Objective
 
