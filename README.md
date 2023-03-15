@@ -10,7 +10,9 @@ I am writing this Whitepaper to ensure I focus my efforts only on the most valua
 
 ## What does the Tome.gg Ecosystem look like?
 
-You can also view the Tome.gg Ecosystem [here](./ecosystem.pdf) (this was built with Draw.io).
+[Read about the Tome.gg Ecosystem](./ecosystem.pdf). 
+
+This was built with Draw.io.
 
 ## Whitepaper Status
 
