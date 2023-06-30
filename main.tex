@@ -1,4 +1,4 @@
-\documentclass[conference]{IEEEtran}
+\documentclass[journal, onecolumn]{IEEEtran}
 \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
@@ -64,39 +64,25 @@ darren.sapalo@gmail.com}
 }
 
 \maketitle
-
 \begin{abstract}
-This whitepaper presents \tomegg's vision of hyper-personalized, inclusive, 
-and equitable quality education and lifelong learning for all, starting with 
-software engineers \footnote{The paper is inclined to focus on software engineers as its primary beneficiaries because of 
-their inclination to be learning-oriented and  first-adopters of new technologies.
-However, the nature of technological evolution is that products and services are 
-built rapidly to increase the wide adoption the new discoveries, which creates value
-accessible to all. This is further discussed and generalized in section \ref{sec:stakeholders}.}.
-
-In section \ref{sec:state_of_education}, we discuss the state of education today, 
-describe the educational challenges that software engineers face, and review the 
-requirements and nature of personalized education.
-In section \ref{sec:problems_challenges}, we formally define the problems and 
-challenges that we aim to address.
-In section \ref{sec:stakeholders}, we describe in more detail the different 
-stakeholders, customers, and beneficiaries of the community.
-In section \ref{sec:tomegg}, we introduce Tome.gg, its fundamental principles,
-and the community that Tome.gg aims to serve.
-In section \ref{sec:contribution}, we present applied theories and tooling built
-on the Tome.gg platform that addresses the discussed challenges.
-
-The remaining sections \ref{sec:principles_mindsets} and \ref{sec:community_directions}
-expound on our community principles and directions that lay the groundwork for the 
-active projects within the community. 
-
-After reading this whitepaper, you will have a clear idea of who we are, what we
-are trying to solve, and the spaces in our community that you can go: to lurk, 
-participate, play, learn, teach, or create.
-\end{abstract}
+  This whitepaper introduces the \tomegg platform, which advances and innovates
+  software engineering education through hyper-personalized, inclusive, and 
+  accessible mentorships and apprenticeships. This paper emphasizes data ownership
+  and articulates the benefit of the personal growth repositories, enabling 
+  individuals to take control of their learning journey.
+  
+  The whitepaper also examines the potential of text-based Language Learning 
+  Model (LLM) AIs in enhancing mentorship experiences by processing and 
+  analyzing textual data, thereby providing tailored guidance. By addressing
+  these innovations, the paper envisions a transformative educational landscape 
+  for software engineers, fostering an inclusive learning environment for all.
+  
+  In section \ref{sec:state_of_education}, the current state of education, software engineering challenges, and personalized education characteristics are discussed. Section \ref{sec:problems_challenges} defines the problems and challenges addressed by the platform. Section \ref{sec:stakeholders} describes the platform's stakeholders, customers, and beneficiaries. Section \ref{sec:tomegg} introduces Tome.gg, its vision, and the target community. Finally, section \ref{sec:contribution} presents the tools and services provided by the Tome.gg platform for users and contributors.
+  \end{abstract}
 
 \begin{IEEEkeywords}
-education, technology, gaming, learning, growth
+learning, growth, personalized education, technology, software engineering, 
+apprenticeship, mentorship, knowledge management
 \end{IEEEkeywords}
 
 \section{The current state of education}
@@ -130,10 +116,10 @@ new educational landscape where the misuse of these widely accessible tools are
 threatening the growth, literacy, and numeracy of many young individuals.
 
 \subsection{Software Engineering and Professional Development}
-
-Educational material for software engineers can be classified into two categories\footnote{
-The enumerated lists are not exhaustive or complete, but they describe the general
-state of available educational materials for software engineers as of the moment.} based on accessibility: online or offline.
+\label{sec:edu_materials}
+Educational material for software engineers can be classified into two categories
+ based on accessibility: online or offline. The enumerated list below is not exhaustive or complete, 
+ but it provides a general idea of the current available educational materials for software engineers.
 
 \textbf{Educational material accessible online:}
 
@@ -144,11 +130,11 @@ state of available educational materials for software engineers as of the moment
   \item Official public documentation of a tool, service, or application
   \item Official discussion forum of a tool, service, or application (disqus)
   \item Question and answer portals (e.g. Quora) 
-  \item Question and answer portals that act as an error repository (e.g. Stack Overflow)
+  \item Error repositories and indexes (e.g. Stack Overflow)
   \item Public and private communities (Substack, newsletters, Discord)
   \item Independent publishers (professional blogs)
-  \item Topic- or concept-focused websites (e.g. roadmap.sh, microservices.io)
-  \item Coaching and mentoring platforms (Sometimes paid, sometimes completely free supported by volunteers)
+  \item Topic- or concept-focused websites (e.g. microservices.io, regex101.com, roadmap.sh)
+  \item Coaching and mentoring platforms (paid, free services)
   \item Public code repositories with discussions on issues and tickets
 \end{enumerate}
 
@@ -158,39 +144,44 @@ state of available educational materials for software engineers as of the moment
   \item Traditional universities, research institutes, or higher-education 
   universities that offer degree programs in computer science, engineering,
   or data science
-  \item Events - in general, these can be workshops, seminars, master classes, hackathons, etc.
-  \item Events held by corporate-backed communities and organizations (Microsoft Philippines, Google Philippines)
-  \item Events held by independent communities and organizations generally serving software engineers, programmers, developers, hackers
-  \item University student-led organizations (Peer tutoring organizations)
-  \item Events held by community niches by tool, product, or practice (e.g. Raspberry Pi enthusiasts)
+  \item Events in varying formats - such as workshops, seminars, master classes, hackathons, casual meets etc.
+  \item Events by organizer - such as corporate-backed organizations 
+  (Microsoft Philippines, Google Philippines), University student-led organizations (Peer tutoring orgs), 
+  Independent communities and organizations niches by tool, product, or practice 
+  (e.g. Raspberry Pi enthusiasts, Golang Philippines, Node.js Philippines, Hasura community)
 \end{enumerate}
 
 The above section describes the various entrypoints of a student in software engineering
-to enter into tech, whether through formal or informal educational platforms. A variety
-of different opportunities open up for the individual, such as general software 
-development through programming, software infrastructure, architecture, security,
-product design, project management, software testing, and more.
+to enter into tech, whether through formal or informal sources. A person new to the industry
+would have this broad variety of options which can be challenging and intimidating to 
+navigate and discern which are relevant to a person's level of capabilities. 
 
 \subsection{AI-assisted tooling for educational purposes}
+The mass-market availability of AI Large Language Models (LLMs) such as ChatGPT, 
+Bing Chat, Bard, and Llama enables people to access vast amounts of information 
+and reasoning capabilities through natural languages (e.g., English) as an 
+interface. These AI tools are trained on the majority of web data prior to 
+2021\footnote{Need to cite paper on ChatGPT, other AI papers}, which include
+publicly-available online educational material such as public documentation of
+tools, services, APIs, and source code. 
 
-We create a separate specific section for Large Language Models (LLMs) such as 
-ChatGPT, Bing Chat, Bard, and Llama because of the immensity of value it delivers
-to enabling the accessibility of education especially for software engineering. 
-With some of these AI tools trained on the  vast majority of web data prior to 2021\footnote{Need to cite paper on ChatGPT, 
-other AI papers}, many of the public educational material enumerated above, such 
-as public documentation of tools and services as well as code snippets, are 
-part of the textual data that was processed. This enables these AI tools to provide
-somewhat sufficient answers when prompted questions about software code snippets, 
-documentation, or concepts in software design and programming.
+Specifically for software engineers, these tools provide great answer 
+approximations not just for generating code simply from a prompt, but also for 
+explaining intimidating concepts. 
 
-Working with LLMs  opened up the new domain of study called Prompt Engineering,
-which is centered on 'prompts' which is the primary way of interacting with these
-text-based AI tools. This incredible innovation in technology enables software engineers and 
-no-code or low-code developers to achieve greater capabilities that were 
-previously inaccessible because understanding the programming languages, tools,
-and services required greater education, more discipline, or broader context 
-in software engineering.
+However, there are limitations to these AI models. For instance, AIs trained on 
+older data may generate outdated or invalid responses due to changes in the field 
+since the last training. Additionally, responses can sometimes produce AI 
+hallucinations, which may be caused by statistical biases or inherent biases in 
+the trained data, such as myths, gossip, or human misconceptions.
 
+Working with LLMs has opened up a new domain of study called Prompt Engineering, 
+which focuses on 'prompts,' the primary way of interacting with text-based AI 
+tools. This groundbreaking innovation in technology enables software engineers 
+and no-code or low-code developers to achieve greater capabilities that were 
+previously inaccessible due to the required understanding of programming 
+languages, tools, and services, which demanded more education, discipline, or 
+broader context in software engineering.
 \subsection{Adult development theories}
 
 With the focus of education of software engineers, we explore some theories of 
@@ -211,6 +202,13 @@ adult development, education and learning.
 % in the following section.
 
 
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{00-tomegg-actors.png}
+  \caption{Example caption.}
+  \label{fig:example}
+\end{figure*}
+
 \subsection{Personalized education}
 
 In the Philippines, some universities have a ratio of one (1) teacher to sixty (60)
@@ -219,26 +217,57 @@ students. These ratios are not far from other developing countries.
 \section{Problems and Challenges} 
 \label{sec:problems_challenges}
 
-\subsection{Rising costs of education}
+\subsection{Barriers to education}
 
-There are a variety of costs to education:
+There are a variety of barriers to education:
 
 \begin{enumerate}
-  \item Financial costs - To advance oneself in their education, you sometimes must
-  spend to get access to great teachers, educators, professors and also to acquire
-  the credibility of system that provides that evaluation (e.g. credibility of
-  a university). These organizations or corporations operate and accrue the 
+  \item Financial costs - Quality education sometimes require a large sum of 
+  money to access great teachers, educators, professors. In  2021 at one of the best universities to study 
+  technology and software engineering, Massachusetts Institute of Technology (MIT) provided estimates of student 
+  charges for an undergraduate course at around 77,020.00 USD: 72.5\% of that amount is intended for tuition 
+  (estimated at 55,878.00 USD) and 27.5\% is for other costs like books, on-campus room \& board (estimated at 21,142.00 USD) \cite{b8}.
+  From 2016 to 2021, MIT's tuition increased by 15.3\%, rising from 48,452.00 USD to 55,878.00 USD. \cite{b8}.
+  
+  A non-exhaustive list of the large expenses that universities spend on are: (a) salaries for administrators, professors, researchers, 
+  and curriculum designers, (b) quality school equipment including maintenance and access to in-person libraries 
+  and electronic libraries, (c) instructional costs to deliver the academic programs to the students, (d) 
+  research and collaborations with industry partners to understand the growing demands of the job market. 
+  A recent graduate of a software engineering degree commonly has the goal of acquiring a good, reliable job that 
+  opens them to a broad selection of economic and growth opportunities.
+  Having understood that, higher education institutions (HEIs) like MIT provide career advising services, host recruiter activities, and
+  provide networking opportunities with established alumni from different companies.  
+  For these reasons, many parents and students are willing to spend large amounts of money and 
+  put their trust in these HEIs.
+
+  to have a well-organized organizations or corporations operate and accrue the 
   reputation of effective evaluators in their fields (academe for university,
   proprietary software for large tech corporations like Amazon and Google).
-  \item Time and energy costs to find relevant content - The wide variety of 
-  options and different modes of  teaching/learning is within the reach of 
-  software engineers, which sometimes makes it overwhelming and intimidating. 
-  Because some apprentices or junior software engineers are not familiar with
-  the landscape in software engineering, they might spend much more time and
-  energy in understanding things because they don't have a map to guide in 
+  \item Signal to noise - With the broad selection of educational materials 
+  accessible to software engineers enumerated in \ref{sec:edu_materials}, 
+  the search for learning content that is appropriate for one's learning 
+  can become overwhelming and intimidating. 
+  
+  Apprentices or junior software engineers may not be familiar yet with terminologies
+  and concepts in software engineering to be able to quickly skim research abstracts or
+  blog articles. In their inexperience, they might find themselves spending more time and
+  energy in comprehending things with a 0 to 100\% expectation because they don't have a map to guide in 
   their navigation. This is reinforced by the proliferation of YouTube trend
   of videos with titles like 'Day in a life of a  software engineer' wherein
   software engineers simply talk about their daily life.
+  \item Energy costs - 
+  \item Opportunity costs - 
+  \item Personalization costs - There is a wide variety of options and modes 
+  of teaching/learning available online. Some categorize the modes of learning as:
+  visual, auditory, kinesthetic \footnote{citation needed}. These learning 
+  preferences are not mutually exclusive (i.e. you only learn effectively in one
+  form). It is more likely that a person has a mixed preference of the different
+  learning modalities. Aside from the percentages of preferences among the three,
+  there is also the preference of frequency and transition speed, more specifically
+  how smoothly the transitions
+  between learning modalities are. When receiving 
+  educational material that does not match your  is within the reach of 
+  software engineers, which sometimes makes it overwhelming and intimidating. 
   \item Context switching costs for personalization - 
 \end{enumerate}
 
@@ -311,8 +340,15 @@ endangering or losing. In these cases, organizations are abundant in their resou
 financial credibility, brand identity (if any), networks, and assets.
 
 
-\section{Tome.gg and its Principles}
+\section{Tome.gg}
 \label{sec:tomegg}
+The paper is inclined to focus on software engineers as its primary beneficiaries because of 
+their inclination to be learning-oriented and  first-adopters of new technologies.
+However, the nature of technological evolution is that products and services are 
+built rapidly to increase the wide adoption the new discoveries, which creates value
+accessible to all. This is further discussed and generalized in section \ref{sec:stakeholders}.
+
+
 Every single person in the world is playing a game. Some play their game casually,
 while some play their game competitively. A person's game might be physical sports
 where the objective is to win based on the rules of the game. A person's game
@@ -471,6 +507,7 @@ citation first, followed by the original foreign-language citation \cite{b6}.
 \bibitem{b5} I need a reference for transfer learning.
 \bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
 \bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+\bibitem{b8} U.S. Department of Education - Institute of Education Sciences. ``Summary Tables, Institutional Characteristics and Student Charges, Price Trends - Massachusetts Institute of Technology'' Accessed May 8, 2023 from \url{https://nces.ed.gov/ipeds/SummaryTables/price-trend}
 \end{thebibliography}
 \vspace{12pt}
 \color{red}
