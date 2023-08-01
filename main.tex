@@ -65,17 +65,19 @@ darren.sapalo@gmail.com}
 
 \maketitle
 \begin{abstract}
-  This whitepaper introduces the \tomegg platform, which advances and innovates
-  software engineering education through hyper-personalized, inclusive, and 
-  accessible mentorships and apprenticeships. This paper emphasizes data ownership
-  and articulates the benefit of the personal growth repositories, enabling 
-  individuals to take control of their learning journey.
-  
-  The whitepaper also examines the potential of text-based Language Learning 
-  Model (LLM) AIs in enhancing mentorship experiences by processing and 
-  analyzing textual data, thereby providing tailored guidance. By addressing
-  these innovations, the paper envisions a transformative educational landscape 
-  for software engineers, fostering an inclusive learning environment for all.
+  This whitepaper introduces \tomegg , a platform for hyper-personalized education.
+  The platform incorporates concepts from a variety of sources: (i) the modern nature of online 
+  communication, (ii) experiences in the tech industry (software engineering, tech and startups),
+  (iii) psychology, education, and learning, (iv) and competitive gaming and e-sports (where majority of 
+  the youth now experience concepts of economics, mathematics, game theory, and strategy).
+  The platform is driven initially with the focus on mentorships and apprenticeships for 
+  mid- to senior-level software engineers. 
+  This paper emphasizes the challenges 
+  encountered in professional development, ownership of intellectual property 
+  and growth data, and the unique opportunity that mentorship offers to bring value
+  both to mentors and apprentices. The paper envisions a transformation on the educational landscape beginning with
+  software engineers, in the pursuit of an inclusive learning environment accessible 
+  to all.
   
   In section \ref{sec:state_of_education}, the current state of education, software engineering challenges, and personalized education characteristics are discussed. Section \ref{sec:problems_challenges} defines the problems and challenges addressed by the platform. Section \ref{sec:stakeholders} describes the platform's stakeholders, customers, and beneficiaries. Section \ref{sec:tomegg} introduces Tome.gg, its vision, and the target community. Finally, section \ref{sec:contribution} presents the tools and services provided by the Tome.gg platform for users and contributors.
   \end{abstract}
@@ -105,23 +107,24 @@ mass adoption of learning management systems, the mass production of digital con
 sold and made accessible online such as books, PDFs, online video recordings of 
 software courses. 
 Traditional education such as schools and universities eventually grew to adopt 
-new communication channels such as online real-time classes, with audio and video data. 
+new communication channels such as online real-time classes (and hybrid variants), with audio and video data. 
 With the movement to the digital space, both teachers and students learned the new 
-rules of engagement and discovered challenges that did not exist pre-pandemic due to
-the evolution of doing lectures, engaging students, managing students' attention, 
-cheating, skipping classes, plagiarism and more.
+rules of engagement in this digital learning environment and discovered challenges that were minimally 
+experienced pre-pandemic in activities which evolved such as lectures, engaging students in presentations, 
+managing students' attention, cheating, skipping classes, plagiarism and more.
 With the recent development of AI LLM tools such as ChatGPT, Bing Chat, Bard, and 
 Llama, university administrators and professors find themselves in a challenging
 new educational landscape where the misuse of these widely accessible tools are 
 threatening the growth, literacy, and numeracy of many young individuals.
 
 \subsection{Software Engineering and Professional Development}
-\label{sec:edu_materials}
-Educational material for software engineers can be classified into two categories
- based on accessibility: online or offline. The enumerated list below is not exhaustive or complete, 
- but it provides a general idea of the current available educational materials for software engineers.
+\label{sec:edu_sources}
+Educational sources for software engineers can be classified into two categories
+ based on mode of access: online or offline. The enumerated list below is neither 
+ exhaustive nor complete, but it provides a general idea of the current available 
+ educational sources and materials for software engineers.
 
-\textbf{Educational material accessible online:}
+\textbf{Educational sources accessible online:}
 
 \begin{enumerate}
   \item Online-capable traditional educational institutions such as Higher Education Universities, or Research Institutes
@@ -130,31 +133,38 @@ Educational material for software engineers can be classified into two categorie
   \item Official public documentation of a tool, service, or application
   \item Official discussion forum of a tool, service, or application (disqus)
   \item Question and answer portals (e.g. Quora) 
-  \item Error repositories and indexes (e.g. Stack Overflow)
-  \item Public and private communities (Substack, newsletters, Discord)
+  \item Question and answer portals that act as error repositories and indexes (e.g. Stack Overflow)
+  \item Public and private communities (Substack, newsletters, Discord, Mastodon)
   \item Independent publishers (professional blogs)
   \item Topic- or concept-focused websites (e.g. microservices.io, regex101.com, roadmap.sh)
   \item Coaching and mentoring platforms (paid, free services)
   \item Public code repositories with discussions on issues and tickets
 \end{enumerate}
 
-\textbf{Educational material accessible offline:}
+\textbf{Educational sources accessible offline:}
 
 \begin{enumerate}
   \item Traditional universities, research institutes, or higher-education 
   universities that offer degree programs in computer science, engineering,
   or data science
-  \item Events in varying formats - such as workshops, seminars, master classes, hackathons, casual meets etc.
-  \item Events by organizer - such as corporate-backed organizations 
-  (Microsoft Philippines, Google Philippines), University student-led organizations (Peer tutoring orgs), 
-  Independent communities and organizations niches by tool, product, or practice 
-  (e.g. Raspberry Pi enthusiasts, Golang Philippines, Node.js Philippines, Hasura community)
+  \item Workshops and Bootcamps - A hands-on learning program for a skill or tool.
+  \item Seminars and lectures - Sessions that provide instruction and information, but often uni-directional in teaching.
+  \item Master classes - Learning environments facilitated by experts where students take a greater role in practice and training.
+  \item Hackathons - A rapid activity to generate MVPs or proof of concepts intended to innovate and create value, 
+    and connect with investors, mentors, and co-collaborators.
+  \item Casual meets, unconferences, coffee chats
+  
 \end{enumerate}
 
-The above section describes the various entrypoints of a student in software engineering
-to enter into tech, whether through formal or informal sources. A person new to the industry
-would have this broad variety of options which can be challenging and intimidating to 
-navigate and discern which are relevant to a person's level of capabilities. 
+Some of the events mentioned above can also be classified by organizer: there are as corporate-backed organizations 
+  (Microsoft Philippines, Google Philippines), University student-led organizations (Peer tutoring orgs), 
+  Independent communities and organizations niches by tool, product, or practice 
+  (e.g. Raspberry Pi enthusiasts, Golang Philippines, Node.js Philippines, Hasura community).
+
+The above section describes the various entrypoints for someone learning technology (whether student or career shifter)
+whether through formal or informal educational sources. A person completely new to the industry
+has all of these options available to them, which can be challenging and intimidating to 
+navigate and discern which areas are appropriate to their current level of interest, capability, commitment, and capacity.
 
 \subsection{AI-assisted tooling for educational purposes}
 The mass-market availability of AI Large Language Models (LLMs) such as ChatGPT, 
@@ -235,8 +245,8 @@ There are a variety of barriers to education:
   research and collaborations with industry partners to understand the growing demands of the job market. 
   A recent graduate of a software engineering degree commonly has the goal of acquiring a good, reliable job that 
   opens them to a broad selection of economic and growth opportunities.
-  Having understood that, higher education institutions (HEIs) like MIT provide career advising services, host recruiter activities, and
-  provide networking opportunities with established alumni from different companies.  
+  Higher education institutions (HEIs) like MIT respond by providing career advising services, hosting recruiter activities, and
+  providing networking opportunities with established alumni working in different companies, and more.  
   For these reasons, many parents and students are willing to spend large amounts of money and 
   put their trust in these HEIs.
 
@@ -244,7 +254,7 @@ There are a variety of barriers to education:
   reputation of effective evaluators in their fields (academe for university,
   proprietary software for large tech corporations like Amazon and Google).
   \item Signal to noise - With the broad selection of educational materials 
-  accessible to software engineers enumerated in \ref{sec:edu_materials}, 
+  accessible to software engineers enumerated in \ref{sec:edu_sources}, 
   the search for learning content that is appropriate for one's learning 
   can become overwhelming and intimidating. 
   
@@ -262,12 +272,15 @@ There are a variety of barriers to education:
   visual, auditory, kinesthetic \footnote{citation needed}. These learning 
   preferences are not mutually exclusive (i.e. you only learn effectively in one
   form). It is more likely that a person has a mixed preference of the different
-  learning modalities. Aside from the percentages of preferences among the three,
-  there is also the preference of frequency and transition speed, more specifically
-  how smoothly the transitions
-  between learning modalities are. When receiving 
-  educational material that does not match your  is within the reach of 
-  software engineers, which sometimes makes it overwhelming and intimidating. 
+  learning modalities. Aside from the categorical preference in mod of teaching, 
+  there are also other aspects of learning such as frequency of learning (e.g. Does 
+  the student prefer visual learning very rarely but auditory learning very frequently?),
+  transition speed (e.g. how quickly do we transition from one mode to the other), and 
+  transition style (e.g. what's the effective way for these modalities to transition, 
+  based on the student's preference in learning?). 
+  When receiving educational material that does not match your preference in any 
+  of these aspects, significant friction can occur that prevents a learner from 
+  advancing and can trigger feelings of being overwhelmed and intimidated. 
   \item Context switching costs for personalization - 
 \end{enumerate}
 
